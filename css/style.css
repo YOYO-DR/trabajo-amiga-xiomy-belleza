@@ -1,0 +1,120 @@
+body {
+  background-color: #f9eee8;
+  padding: 1rem;
+  height: 90vh;
+}
+.navbar {
+  background-color: #f2ddd2 !important;
+}
+.radiust {
+  border-radius: 25px 25px 0 0;
+}
+.radiusb {
+  border-radius: 0 0 25px 25px;
+}
+
+.radiustb {
+  border-radius: 25px 25px 25px 25px;
+}
+.content {
+  background-color: #eacdbc !important;
+}
+
+.btnProduct {
+  text-align: center;
+  text-decoration: none;
+  width: 10rem;
+  height: 40px;
+  color: black;
+  padding: 5px 10px;
+  font-weight: bolder;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background: #d8af97;
+  box-shadow: 0 5px #ab846e;
+}
+
+.btnProduct:hover {
+  box-shadow: 0 3px #ab846e;
+  top: 1px;
+}
+.btnProduct:active {
+  box-shadow: 0 0 #ab846e;
+  top: 5px;
+}
+.cate-p {
+  background-color: #f2ddd2;
+}
+.border-drop {
+  border-radius: 15px 15px 15px 15px;
+}
+.border-dropt {
+  border-radius: 15px 15px 0 0;
+}
+.img-drop {
+  width: 100px;
+  border-radius: 15px 0 0 15px;
+  padding: 5px;
+}
+.icono-flecha {
+  width: 40px;
+}
+
+.btn-des,.btn-despm {
+  background-color: transparent;
+  display: inline-block;
+  border: none !important;
+  cursor: pointer;
+}
+
+.values-drop {
+  background-color: #e2bca7;
+}
+.item-producto {
+  min-height: 70px;
+  max-height: 100px;
+}
+.accordion-item {
+  background-color: transparent;
+  border: none !important;
+}
+
+.accordion-title {
+  background-color: #f2ddd2 !important;
+  padding: 0;
+  border-radius: 15px !important;
+}
+.accordion-title:focus {
+  box-shadow: none !important;
+}
+
+.form-buscar input:focus {
+  border: solid 1px #ab846e;
+  box-shadow: none;
+}
+.input-focus:focus{
+  box-shadow: none !important;
+  border-color: #ab846e !important;
+}
+.rounded-4 {
+  border-color: #ab846e !important;
+  border-width: 2px !important;
+}
+
+.minus img,.plus img {
+  width: 25px !important;
+  padding: 1px;
+}
+.minus,.plus {
+border: solid transparent 1px !important;
+}
+.minus:hover,.plus:hover {
+background-color: #d8af97;
+border-radius: 20px;
+border: solid #ab846e 1px !important;
+padding-bottom: 5px;
+}

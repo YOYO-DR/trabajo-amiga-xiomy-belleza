@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Icono -->
+    <link rel="icon" href="/img/favicon.png" />
+
+    <!-- Css bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>D"Coffee | La mejor cafeteria</title>
+  </head>
+  <body>
+    <div class="h-100">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-md bg-body-tertiary radiustb">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">D"Coffee</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/productos.html">Productos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbarend -->
+      <!-- Content -->
+      <div class="container-fluid container-md">
+        <h1>Cafeteria D"Coffee</h1>
+        <p>
+          <b>Cafeteria D"Coffee</b> lo invita a realizar su delicioso pedido
+        </p>
+        <!-- Productos -->
+        <div class="d-flex flex-column flex-md-row pb-5">
+          <section class="col-12 col-md-8">
+            <form class="d-flex px-0 px-md-5 form-buscar" role="search">
+              <input
+                required
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+            </form>
+            <div class="mt-2">
+              <!-- Acordion de las categorias -->
+              <div class="accordion" id="accordionExample">
+                <h2 class="display-6">Cafés</h2>
+                <div class="accordion-item">
+                  <!-- TituloItem -->
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed accordion-title pe-1 pe-md-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsecafenegro"
+                      aria-expanded="false"
+                      aria-controls="collapsecafenegro"
+                    >
+                      <div class="d-flex align-items-center">
+                        <img
+                          class="img-drop me-1"
+                          src="/img/productos/cafe negro - c.jpg"
+                          alt=""
+                        />
+                        <h2 class="fs-3">Café negro</h2>
+                      </div>
+                    </button>
+                  </h2>
+                  <!-- Fin TituloItem -->
+                  <!-- div del item -->
+                  <div
+                    id="collapsecafenegro"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <!-- Cuerpo del item -->
+                    <div class="accordion-body p-0 p-md-3 p-0 p-md-3">
+                      <div
+                        class="col-12 d-flex align-items-center values-drop producto border-drop mt-2 mt-md-0"
+                      >
+                        <img
+                          class="img-drop"
+                          src="/img/productos/cafe negro - espresso.jpg"
+                          alt=""
+                        />
+                        <div class="d-flex justify-content-between w-100">
+                          <div class="d-flex flex-column">
+                            <span class="fs-5">Café negro Espresso</span>
+                            <span><b>Precio:</b>$<i id="precio">15000</i></span>
+                          </div>
+                          <button class="btn-des">
+                            <img
+                              class="icono-flecha"
+                              src="/img/signo-de-mas.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="col-12 d-flex align-items-center values-drop producto border-drop mt-2"
+                      >
+                        <img
+                          class="img-drop"
+                          src="/img/productos/cafe negro - americano.jpg"
+                          alt=""
+                        />
+                        <div class="d-flex justify-content-between w-100">
+                          <div class="d-flex flex-column">
+                            <span class="fs-5">Café negro Americano</span>
+                            <span><b>Precio:</b>$<i id="precio">20000</i></span>
+                          </div>
+                          <button class="btn-des">
+                            <img
+                              class="icono-flecha"
+                              src="/img/signo-de-mas.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="col-12 d-flex align-items-center values-drop producto border-drop mt-2"
+                      >
+                        <img
+                          class="img-drop"
+                          src="/img/productos/cafe negro - filtrado.jpg"
+                          alt=""
+                        />
+                        <div class="d-flex justify-content-between w-100">
+                          <div class="d-flex flex-column">
+                            <span class="fs-5">Café negro Filtrado</span>
+                            <span><b>Precio:</b>$<i id="precio">15000</i></span>
+                          </div>
+                          <button class="btn-des">
+                            <img
+                              class="icono-flecha"
+                              src="/img/signo-de-mas.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!--fin Cuerpo del item -->
+                  </div>
+                  <!-- fin div del item -->
+                </div>
+
+                <div class="accordion-item mt-2">
+                  <!-- TituloItem -->
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed accordion-title pe-1 pe-md-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsecafeleche"
+                      aria-expanded="false"
+                      aria-controls="collapsecafeleche"
+                    >
+                      <div class="d-flex align-items-center">
+                        <img
+                          class="img-drop me-1"
+                          src="/img/productos/cafe con leche - c.jpg"
+                          alt=""
+                        />
+                        <h2 class="fs-3">Café con leche</h2>
+                      </div>
+                    </button>
+                  </h2>
+                  <!-- Fin TituloItem -->
+                  <!-- div del item -->
+                  <div
+                    id="collapsecafeleche"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <!-- Cuerpo del item -->
+                    <div class="accordion-body p-0 p-md-3">
+                      <div
+                        class="col-12 d-flex align-items-center values-drop producto border-drop mt-2 mt-md-0"
+                      >
+                        <img
+                          class="img-drop"
+                          src="/img/productos/cafe con leche - latte.jpg"
+                          alt=""
+                        />
+                        <div class="d-flex justify-content-between w-100">
+                          <div class="d-flex flex-column">
+                            <span class="fs-5">Café con leche Latte</span>
+                            <span><b>Precio:</b>$<i id="precio">25000</i></span>
+                          </div>
+                          <button class="btn-des">
+                            <img
+                              class="icono-flecha"
+                              src="/img/signo-de-mas.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="col-12 d-flex align-items-center values-drop producto border-drop mt-2"
+                      >
+                        <img
+                          class="img-drop"
+                          src="/img/productos/cafe con leche - capuccino.png"
+                          alt=""
+                        />
+                        <div class="d-flex justify-content-between w-100">
+                          <div class="d-flex flex-column">
+                            <span class="fs-5">Café con leche Capuccino</span>
+                            <span><b>Precio:</b>$<i id="precio">18000</i></span>
+                          </div>
+                          <button class="btn-des">
+                            <img
+                              class="icono-flecha"
+                              src="/img/signo-de-mas.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="col-12 d-flex align-items-center values-drop producto border-drop mt-2"
+                      >
+                        <img
+                          class="img-drop"
+                          src="/img/productos/cafe con leche - macchiato.jpg"
+                          alt=""
+                        />
+                        <div class="d-flex justify-content-between w-100">
+                          <div class="d-flex flex-column">
+                            <span class="fs-5">Café con leche Macchiato</span>
+                            <span><b>Precio:</b>$<i id="precio">18000</i></span>
+                          </div>
+                          <button class="btn-des">
+                            <img
+                              class="icono-flecha"
+                              src="/img/signo-de-mas.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!--fin Cuerpo del item -->
+                  </div>
+                  <!-- fin div del item -->
+                </div>
+
+                <div class="accordion-item mt-2">
+                  <!-- TituloItem -->
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed accordion-title pe-1 pe-md-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsecafehelado"
+                      aria-expanded="false"
+                      aria-controls="collapsecafehelado"
+                    >
+                      <div class="d-flex align-items-center">
+                        <img
+                          class="img-drop me-1"
+                          src="/img/productos/cafe helado - c.jpg"
+                          alt=""
+                        />
+                        <h2 class="fs-3">Café helado</h2>
+                      </div>
+                    </button>
+                  </h2>
+                  <!-- Fin TituloItem -->
+                  <!-- div del item -->
+                  <div
+                    id="collapsecafehelado"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <!-- Cuerpo del item -->
+                    <div class="accordion-body p-0 p-md-3">
+                      <div
+                        class="col-12 d-flex align-items-center values-drop producto border-drop mt-2 mt-md-0"
+                      >
+                        <img
+                          class="img-drop"
+                          src="/img/productos/cafe helado - frappe.jpg"
+                          alt=""
+                        />
+                        <div class="d-flex justify-content-between w-100">
+                          <div class="d-flex flex-column">
+                            <span class="fs-5">Café helado Frappé</span>
+                            <span><b>Precio:</b>$<i id="precio">22000</i></span>
+                          </div>
+                          <button class="btn-des">
+                            <img
+                              class="icono-flecha"
+                              src="/img/signo-de-mas.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="col-12 d-flex align-items-center values-drop producto border-drop mt-2"
+                      >
+                        <img
+                          class="img-drop"
+                          src="/img/productos/cafe helado - vainilla.jpg"
+                          alt=""
+                        />
+                        <div class="d-flex justify-content-between w-100">
+                          <div class="d-flex flex-column">
+                            <span class="fs-5">Café helado con Vainilla</span>
+                            <span><b>Precio:</b>$<i id="precio">18000</i></span>
+                          </div>
+                          <button class="btn-des">
+                            <img
+                              class="icono-flecha"
+                              src="/img/signo-de-mas.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="col-12 d-flex align-items-center values-drop producto border-drop mt-2"
+                      >
+                        <img
+                          class="img-drop"
+                          src="/img/productos/cafe helado - caramelo.jpg"
+                          alt=""
+                        />
+                        <div class="d-flex justify-content-between w-100">
+                          <div class="d-flex flex-column">
+                            <span class="fs-5">Café helado con Caramelo</span>
+                            <span><b>Precio:</b>$<i id="precio">22000</i></span>
+                          </div>
+                          <button class="btn-des">
+                            <img
+                              class="icono-flecha"
+                              src="/img/signo-de-mas.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!--fin Cuerpo del item -->
+                  </div>
+                  <!-- fin div del item -->
+                </div>
+
+                <div class="accordion-item mt-2">
+                  <!-- TituloItem -->
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed accordion-title pe-1 pe-md-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsecafearomatizado"
+                      aria-expanded="false"
+                      aria-controls="collapsecafearomatizado"
+                    >
+                      <div class="d-flex align-items-center">
+                        <img
+                          class="img-drop me-1"
+                          src="/img/productos/cafe aromatizado - c.jpg"
+                          alt=""
+                        />
+                        <h2 class="fs-3">Café aromatizado</h2>
+                      </div>
+                    </button>
+                  </h2>
+                  <!-- Fin TituloItem -->
+                  <!-- div del item -->
+                  <div
+                    id="collapsecafearomatizado"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <!-- Cuerpo del item -->
+                    <div class="accordion-body p-0 p-md-3">
+                      <div
+                        class="col-12 d-flex align-items-center values-drop producto border-drop mt-2 mt-md-0"
+                      >
+                        <img
+                          class="img-drop"
+                          src="/img/productos/cafe aromatizado - vainilla.jpg"
+                          alt=""
+                        />
+                        <div class="d-flex justify-content-between w-100">
+                          <div class="d-flex flex-column">
+                            <span class="fs-5"
+                              >Café aromatizado de Vainilla</span
+                            >
+                            <span><b>Precio:</b>$<i id="precio">15000</i></span>
+                          </div>
+                          <button class="btn-des">
+                            <img
+                              class="icono-flecha"
+                              src="/img/signo-de-mas.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="col-12 d-flex align-items-center values-drop producto border-drop mt-2"
+                      >
+                        <img
+                          class="img-drop"
+                          src="/img/productos/cafe aromatizado - avellana.jpg"
+                          alt=""
+                        />
+                        <div class="d-flex justify-content-between w-100">
+                          <div class="d-flex flex-column">
+                            <span class="fs-5"
+                              >Café aromatizado de Avellana</span
+                            >
+                            <span><b>Precio:</b>$<i id="precio">23000</i></span>
+                          </div>
+                          <button class="btn-des">
+                            <img
+                              class="icono-flecha"
+                              src="/img/signo-de-mas.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="col-12 d-flex align-items-center values-drop producto border-drop mt-2"
+                      >
+                        <img
+                          class="img-drop"
+                          src="/img/productos/cafe aromatizado - almendra.jpg"
+                          alt=""
+                        />
+                        <div class="d-flex justify-content-between w-100">
+                          <div class="d-flex flex-column">
+                            <span class="fs-5"
+                              >Café aromatizado de Almendra</span
+                            >
+                            <span><b>Precio:</b>$<i id="precio">19000</i></span>
+                          </div>
+                          <button class="btn-des">
+                            <img
+                              class="icono-flecha"
+                              src="/img/signo-de-mas.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!--fin Cuerpo del item -->
+                  </div>
+                  <!-- fin div del item -->
+                </div>
+
+                <h2 class="display-6">Postres</h2>
+
+                <div class="accordion-item">
+                  <!-- TituloItem -->
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed accordion-title pe-1 pe-md-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsepostrespasteles"
+                      aria-expanded="false"
+                      aria-controls="collapsepostrespasteles"
+                    >
+                      <div class="d-flex align-items-center">
+                        <img
+                          class="img-drop me-1"
+                          src="/img/productos/postres pasteles - c.jpg"
+                          alt=""
+                        />
+                        <h2 class="fs-3">Pasteles</h2>
+                      </div>
+                    </button>
+                  </h2>
+                  <!-- Fin TituloItem -->
+                  <!-- div del item -->
+                  <div
+                    id="collapsepostrespasteles"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <!-- Cuerpo del item -->
+                    <div class="accordion-body p-0 p-md-3 p-0 p-md-3">
+                      <div
+                        class="col-12 d-flex align-items-center values-drop producto border-drop mt-2 mt-md-0"
+                      >
+                        <img
+                          class="img-drop"
+                          src="/img/productos/postres pasteles - chocolate.jpg"
+                          alt=""
+                        />
+                        <div class="d-flex justify-content-between w-100">
+                          <div class="d-flex flex-column">
+                            <span class="fs-5">Pastel de chocolate</span>
+                            <span><b>Precio:</b>$<i id="precio">17000</i></span>
+                          </div>
+                          <button class="btn-des">
+                            <img
+                              class="icono-flecha"
+                              src="/img/signo-de-mas.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="col-12 d-flex align-items-center values-drop producto border-drop mt-2"
+                      >
+                        <img
+                          class="img-drop"
+                          src="/img/productos/postres pasteles - tarta manzana.jpg"
+                          alt=""
+                        />
+                        <div class="d-flex justify-content-between w-100">
+                          <div class="d-flex flex-column">
+                            <span class="fs-5">Pastel tarta de manzana</span>
+                            <span><b>Precio:</b>$<i id="precio">22000</i></span>
+                          </div>
+                          <button class="btn-des">
+                            <img
+                              class="icono-flecha"
+                              src="/img/signo-de-mas.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="col-12 d-flex align-items-center values-drop producto border-drop mt-2"
+                      >
+                        <img
+                          class="img-drop"
+                          src="/img/productos/postres pasteles - chesecake fresa.jpg"
+                          alt=""
+                        />
+                        <div class="d-flex justify-content-between w-100">
+                          <div class="d-flex flex-column">
+                            <span class="fs-5">Pastel Cheesecake de fresa</span>
+                            <span><b>Precio:</b>$<i id="precio">17000</i></span>
+                          </div>
+                          <button class="btn-des">
+                            <img
+                              class="icono-flecha"
+                              src="/img/signo-de-mas.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!--fin Cuerpo del item -->
+                  </div>
+                  <!-- fin div del item -->
+                </div>
+
+                <div class="accordion-item mt-2">
+                  <!-- TituloItem -->
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed accordion-title pe-1 pe-md-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsepostreshelados"
+                      aria-expanded="false"
+                      aria-controls="collapsepostreshelados"
+                    >
+                      <div class="d-flex align-items-center">
+                        <img
+                          class="img-drop me-1"
+                          src="/img/productos/postres helados - c.jpg"
+                          alt=""
+                        />
+                        <h2 class="fs-3">Postres de helado</h2>
+                      </div>
+                    </button>
+                  </h2>
+                  <!-- Fin TituloItem -->
+                  <!-- div del item -->
+                  <div
+                    id="collapsepostreshelados"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <!-- Cuerpo del item -->
+                    <div class="accordion-body p-0 p-md-3 p-0 p-md-3">
+                      <div
+                        class="col-12 d-flex align-items-center values-drop producto border-drop mt-2 mt-md-0"
+                      >
+                        <img
+                          class="img-drop"
+                          src="/img/productos/postres helados - vainilla.jpg"
+                          alt=""
+                        />
+                        <div class="d-flex justify-content-between w-100">
+                          <div class="d-flex flex-column">
+                            <span class="fs-5">Postre helado de vainilla</span>
+                            <span><b>Precio:</b>$<i id="precio">18000</i></span>
+                          </div>
+                          <button class="btn-des">
+                            <img
+                              class="icono-flecha"
+                              src="/img/signo-de-mas.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="col-12 d-flex align-items-center values-drop producto border-drop mt-2"
+                      >
+                        <img
+                          class="img-drop"
+                          src="/img/productos/postres helados - sorbete limon.jpg"
+                          alt=""
+                        />
+                        <div class="d-flex justify-content-between w-100">
+                          <div class="d-flex flex-column">
+                            <span class="fs-5"
+                              >Postre helado Sobrete de limón</span
+                            >
+                            <span><b>Precio:</b>$<i id="precio">23000</i></span>
+                          </div>
+                          <button class="btn-des">
+                            <img
+                              class="icono-flecha"
+                              src="/img/signo-de-mas.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="col-12 d-flex align-items-center values-drop producto border-drop mt-2"
+                      >
+                        <img
+                          class="img-drop"
+                          src="/img/productos/postres helados - cookies cream.jpg"
+                          alt=""
+                        />
+                        <div class="d-flex justify-content-between w-100">
+                          <div class="d-flex flex-column">
+                            <span class="fs-5"
+                              >Postre helado de cookies and cream</span
+                            >
+                            <span><b>Precio:</b>$<i id="precio">18000</i></span>
+                          </div>
+                          <button class="btn-des">
+                            <img
+                              class="icono-flecha"
+                              src="/img/signo-de-mas.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!--fin Cuerpo del item -->
+                  </div>
+                  <!-- fin div del item -->
+                </div>
+
+                <div class="accordion-item mt-2">
+                  <!-- TituloItem -->
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed accordion-title pe-1 pe-md-3"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsepostresfrutas"
+                      aria-expanded="false"
+                      aria-controls="collapsepostresfrutas"
+                    >
+                      <div class="d-flex align-items-center">
+                        <img
+                          class="img-drop me-1"
+                          src="/img/productos/postres frutas - c.jpg"
+                          alt=""
+                        />
+                        <h2 class="fs-3">Postres de frutas</h2>
+                      </div>
+                    </button>
+                  </h2>
+                  <!-- Fin TituloItem -->
+                  <!-- div del item -->
+                  <div
+                    id="collapsepostresfrutas"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <!-- Cuerpo del item -->
+                    <div class="accordion-body p-0 p-md-3 p-0 p-md-3">
+                      <div
+                        class="col-12 d-flex align-items-center values-drop producto border-drop mt-2 mt-md-0"
+                      >
+                        <img
+                          class="img-drop"
+                          src="/img/productos/postres - tarta de frutas.jpg"
+                          alt=""
+                        />
+                        <div class="d-flex justify-content-between w-100">
+                          <div class="d-flex flex-column">
+                            <span class="fs-5">Postre tarta de frutas</span>
+                            <span><b>Precio:</b>$<i id="precio">19000</i></span>
+                          </div>
+                          <button class="btn-des">
+                            <img
+                              class="icono-flecha"
+                              src="/img/signo-de-mas.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="col-12 d-flex align-items-center values-drop producto border-drop mt-2"
+                      >
+                        <img
+                          class="img-drop"
+                          src="/img/productos/postres - compota manzana.jpg"
+                          alt=""
+                        />
+                        <div class="d-flex justify-content-between w-100">
+                          <div class="d-flex flex-column">
+                            <span class="fs-5">Postre compota de manzana</span>
+                            <span><b>Precio:</b>$<i id="precio">24000</i></span>
+                          </div>
+                          <button class="btn-des">
+                            <img
+                              class="icono-flecha"
+                              src="/img/signo-de-mas.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+
+                      <div
+                        class="col-12 d-flex align-items-center values-drop producto border-drop mt-2"
+                      >
+                        <img
+                          class="img-drop"
+                          src="/img/productos/postres - ensalada frutas.jpg"
+                          alt=""
+                        />
+                        <div class="d-flex justify-content-between w-100">
+                          <div class="d-flex flex-column">
+                            <span class="fs-5">Ensalada de frutas</span>
+                            <span><b>Precio:</b>$<i id="precio">21000</i></span>
+                          </div>
+                          <button class="btn-des">
+                            <img
+                              class="icono-flecha"
+                              src="/img/signo-de-mas.png"
+                              alt=""
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!--fin Cuerpo del item -->
+                  </div>
+                  <!-- fin div del item -->
+                </div>
+              </div>
+              <!--fin Acordion de las categorias -->
+            </div>
+          </section>
+
+          <!-- Formulario -->
+          <section class="col-12 col-md-4 ms-0 ms-md-3 mt-3 mt-md-0">
+            <form id="form-pedido">
+              <!-- Select -->
+              <div class="my-1">
+                <label for="tipo-pedido">Tipo de pedido:</label>
+                <select
+                  id="tipo-pedido"
+                  name="tipopedido"
+                  class="form-select input-focus"
+                  aria-label="Default select example"
+                  required
+                >
+                  <option value="domicilio" selected>Domicilio</option>
+                  <option value="reserva">Reserva</option>
+                  <option value="en-tienda">Recoger en Tienda</option>
+                  <option value="local">Consumo Local</option>
+                </select>
+              </div>
+              <div id="form-dinamico">
+                <div class="mb-3 border rounded-4 p-2">
+                  <label for="i-nombre" class="form-label">Nombre</label>
+                  <input
+                    required
+                    type="text"
+                    class="form-control input-focus"
+                    name="nombre"
+                  />
+                  <label>Dirección:</label>
+                  <div class="input-group">
+                    <select
+                      class="form-select input-focus"
+                      aria-label="Default select example"
+                      name="selectdireccion"
+                    >
+                      <option value="avenida" selected>Avenida</option>
+                      <option value="carrera">Carrera</option>
+                      <option value="calle">Calle</option>
+                    </select>
+                    <input
+                      required
+                      type="text"
+                      class="form-control ms-1 input-focus"
+                      name="duno"
+                      placeholder="1A"
+                    />
+                    <span class="mx-1">#</span>
+                    <input
+                      required
+                      type="text"
+                      class="form-control input-focus"
+                      name="ddos"
+                      placeholder="11"
+                    />
+                    <span class="mx-1">-</span>
+                    <input
+                      required
+                      type="text"
+                      class="form-control input-focus"
+                      name="dtres"
+                      placeholder="54"
+                    />
+                  </div>
+                  <label>Barrio, Apto, Casa o Punto de Referencia?</label>
+                  <input
+                    name="referencia"
+                    type="text"
+                    class="form-control input-focus"
+                  />
+                </div>
+              </div>
+              <div class="border rounded-4 p-2">
+                <h2 class="fs-3">Tu pedido</h2>
+                <div id="carrito" class="p-2"></div>
+                <hr />
+                <div class="mb-1">
+                  <label for=""
+                    >Puedes agregar notas a tu pedido, y dar click "Enviar a
+                    WhatsApp".</label
+                  >
+                  <input type="text" name="notapedido" class="form-control input-focus" />
+                </div>
+                <hr />
+                <button
+                  disabled
+                  id="btnSubmit"
+                  type="submit"
+                  class="btn btn-outline-success w-100"
+                >
+                  Hacer pedido <i class="bi bi-whatsapp"></i>
+                </button>
+              </div>
+            </form>
+          </section>
+          <!-- Formularioend -->
+        </div>
+        <!-- Productosend -->
+      </div>
+    </div>
+    <!-- Contentend -->
+    <!-- Scripts -->
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Sweetalert-->
+    <script src="/js/sweetalert2/sweetalert2.all.min.js"></script>
+    <script src="js/productos.js"></script>
+  </body>
+</html>
