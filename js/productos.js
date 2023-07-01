@@ -1,10 +1,20 @@
 function activarDesactivarSubmit() {
   const produtosEnCarrito = document.querySelectorAll(".item-producto");
+  const divCarrito= document.getElementById("carrito");
   const boton = document.getElementById("btnSubmit");
+  const carritoVacioText = document.querySelector("#mensaje-carrito");
+
   if (produtosEnCarrito.length === 0) {
     boton.disabled = true;
+    //agrego el mensaje de que el carrito esta vacio
+    divCarrito.innerHTML =
+      '<h2 class="fs-5 w-100 text-center" id="mensaje-carrito">Carrito vacio</h2>';
   } else {
     boton.disabled = false;
+    //quito el h2 del mensaje si hay valores en el carrito
+    if (carritoVacioText) {
+      divCarrito.removeChild(carritoVacioText)
+    }
   }
 }
 //mensaje
@@ -139,19 +149,6 @@ document.addEventListener("DOMContentLoaded", function () {
                   class="form-control input-focus"
                    name="nombre"
                 />
-                <label>Mesa:</label>
-                <select
-                  class="form-select input-focus"
-                  aria-label="Default select example"
-                  name="selectmesa"
-                >
-                   
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
                 <label for="">Fecha</label>
                 <input required name="fecha" type="date" class="form-control input-focus" />
                 <label for="">Hora</label>
@@ -168,29 +165,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 />
               </div>
   `;
-  var formLocal = `
-  <div class="mb-3 border rounded-4 p-2">
-                <label for="i-nombre" class="form-label">Nombre</label>
-                <input required 
-                  type="text"
-                  class="form-control input-focus"
-                   name="nombre"
-                />
-                <label>Mesa:</label>
-                <select
-                  name="selectmesa"
-                  class="form-select input-focus"
-                  aria-label="Default select example"
-                >
-                   
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                </select>
-              </div>
-  `;
   //agrego el evento de cambio de pedido para cargar el formulario
   document
     .getElementById("tipo-pedido")
@@ -204,8 +178,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("form-dinamico").innerHTML = formReserva;
       } else if (valorSeleccionado == "en-tienda") {
         document.getElementById("form-dinamico").innerHTML = formEnTienda;
-      } else if (valorSeleccionado == "local") {
-        document.getElementById("form-dinamico").innerHTML = formLocal;
       }
     });
   /* carrito */
@@ -364,7 +336,6 @@ document.addEventListener("DOMContentLoaded", function () {
     nombre: "Nombre",
     selectdireccion: "Dirección",
     referencia: "Referencia",
-    selectmesa: "Mesa",
     fecha: "Fecha",
     hora: "Hora",
   };
