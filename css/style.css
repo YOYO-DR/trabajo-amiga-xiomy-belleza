@@ -1,10 +1,11 @@
+
 body {
-  background-color: #f9eee8;
+  background-color: #fdeaf2;
   padding: 1rem;
   height: 90vh;
 }
 .navbar {
-  background-color: #f2ddd2 !important;
+  background-color: #fbd5e5 !important;
 }
 .radiust {
   border-radius: 25px 25px 0 0;
@@ -17,7 +18,7 @@ body {
   border-radius: 25px 25px 25px 25px;
 }
 .content {
-  background-color: #eacdbc !important;
+  background-color: #f7bfd8 !important;
 }
 
 .btnProduct {
@@ -34,20 +35,20 @@ body {
   outline: none;
   border-radius: 5px;
   border: none;
-  background: #d8af97;
-  box-shadow: 0 5px #ab846e;
+  background: #eb9ac0;
+  box-shadow: 0 5px #bd6f95;
 }
 
 .btnProduct:hover {
-  box-shadow: 0 3px #ab846e;
+  box-shadow: 0 3px #bd6f95;
   top: 1px;
 }
 .btnProduct:active {
-  box-shadow: 0 0 #ab846e;
+  box-shadow: 0 0 #bd6f95;
   top: 5px;
 }
 .cate-p {
-  background-color: #f2ddd2;
+  background-color: #fbd5e5;
 }
 .border-drop {
   border-radius: 15px 15px 15px 15px;
@@ -72,7 +73,7 @@ body {
 }
 
 .values-drop {
-  background-color: #e2bca7;
+  background-color: #f0bfd5;
 }
 .item-producto {
   min-height: 70px;
@@ -84,7 +85,7 @@ body {
 }
 
 .accordion-title {
-  background-color: #f2ddd2 !important;
+  background-color: #fbd5e5 !important;
   padding: 0;
   border-radius: 15px !important;
 }
@@ -93,15 +94,15 @@ body {
 }
 
 .form-buscar input:focus {
-  border: solid 1px #ab846e;
+  border: solid 1px #bd6f95;
   box-shadow: none;
 }
 .input-focus:focus{
   box-shadow: none !important;
-  border-color: #ab846e !important;
+  border-color: #bd6f95 !important;
 }
 .rounded-4 {
-  border-color: #ab846e !important;
+  border-color: #bd6f95 !important;
   border-width: 2px !important;
 }
 
@@ -113,8 +114,8 @@ body {
 border: solid transparent 1px !important;
 }
 .minus:hover,.plus:hover {
-background-color: #d8af97;
+background-color: #eb9ac0;
 border-radius: 20px;
-border: solid #ab846e 1px !important;
+border: solid #bd6f95 1px !important;
 padding-bottom: 5px;
 }

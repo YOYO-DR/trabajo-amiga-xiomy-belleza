@@ -375,7 +375,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //obtengo el formulario
     var parameters = new FormData(this);
     //inicializo el mensaje a crear
-    let mensaje = `Pedido de Cafeteria D"Coffe\nInformación:\n`;
+    let mensaje = `Pedido de   D"Coffe\nInformación:\n`;
     //inicializo los valores del formulario
     const valores = {};
     //recorreo el FormData y obtengo los valores
