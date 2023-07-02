@@ -346,7 +346,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //obtengo el formulario
     var parameters = new FormData(this);
     //inicializo el mensaje a crear
-    let mensaje = `Pedido de   D"Coffe\nInformación:\n`;
+    let mensaje = `Pedido de Prueba-\nInformación:\n`;
     //inicializo los valores del formulario
     const valores = {};
     //recorreo el FormData y obtengo los valores
@@ -384,7 +384,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       mensaje += `Total pedido: $${totalPedido}\n`;
       mensaje = encodeURIComponent(mensaje);
-      window.location.href = `https://wa.me/573206081583?text=${mensaje}`;
+      window.location.href = `https://wa.me/573234809556?text=${mensaje}`;
     }
   });
 });
